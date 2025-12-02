@@ -1,7 +1,7 @@
 import styles from "./searchInput.module.css";
 import { IconSearch } from "../icons";
 
-export default function searchInput(props) {
+const SearchInput = (props) => {
   return (
     <div className={styles.container}>
       <IconSearch />
@@ -9,4 +9,6 @@ export default function searchInput(props) {
       <input className={styles.input} {...props} />
     </div>
   );
-}
+};
+
+export default SearchInput;

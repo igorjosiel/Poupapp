@@ -1,7 +1,7 @@
 import styles from "./aside.module.css";
 import logo from "../../assets/logo.svg";
 
-export default function Aside() {
+const Aside = () => {
   return (
     <aside className={styles.aside}>
       <img src={logo} alt="" />
@@ -11,4 +11,6 @@ export default function Aside() {
       </footer>
     </aside>
   );
-}
+};
+
+export default Aside;

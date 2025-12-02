@@ -6,7 +6,7 @@ const TAGS = {
   body: "p",
 };
 
-export default function Typography({ variant, children }) {
+const Typography = ({ variant, children }) => {
   const Component = TAGS[variant] || TAGS.body;
   const variantClass = styles[variant] || styles.p;
 
@@ -16,3 +16,5 @@ export default function Typography({ variant, children }) {
     </Component>
   );
 }
+
+export default Typography;
