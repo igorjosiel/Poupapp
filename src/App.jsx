@@ -1,12 +1,16 @@
-import { Container } from "./components/Container";
-import { Aside } from "./components/Aside";
+import Container from "./components/Container";
+import Aside from "./components/Aside";
+import SearchInput from "./components/SearchInput";
+import Main from "./components/Main";
 
 function App() {
   return (
     <Container>
       <Aside />
 
-      <h1>Poupapp</h1>
+      <Main>
+        <SearchInput />
+      </Main>
     </Container>
   );
 }
