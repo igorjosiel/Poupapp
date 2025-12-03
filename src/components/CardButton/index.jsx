@@ -1,7 +1,7 @@
 import Button from "../Button";
-import styles from "./buttoncard.module.css";
+import styles from "./cardbutton.module.css";
 
-const ButtonCard = ({ children }) => {
+const CardButton = ({ children }) => {
   return (
     <div className={styles.actions}>
       <Button>{children}</Button>
@@ -9,4 +9,4 @@ const ButtonCard = ({ children }) => {
   );
 };
 
-export default ButtonCard;
+export default CardButton;

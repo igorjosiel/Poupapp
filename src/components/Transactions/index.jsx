@@ -1,7 +1,7 @@
 import { Fragment } from "react";
-import ButtonCard from "../ButtonCard";
+import CardButton from "../CardButton";
 import { IconCurrency } from "../icons";
-import ListCard from "../ListCard";
+import CardList from "../CardList";
 import TransactionItem from "../TransactionItem";
 
 const Transactions = () => {
@@ -25,7 +25,7 @@ const Transactions = () => {
 
   return (
     <Fragment>
-      <ListCard>
+      <CardList>
         {transactions.map((transaction, index) => {
           return (
             <li key={index}>
@@ -33,11 +33,11 @@ const Transactions = () => {
             </li>
           );
         })}
-      </ListCard>
+      </CardList>
 
-      <ButtonCard>
+      <CardButton>
         <IconCurrency /> Adicionar transação
-      </ButtonCard>
+      </CardButton>
     </Fragment>
   );
 };

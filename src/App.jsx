@@ -7,6 +7,7 @@ import Card from "./components/Card";
 import DailyBudget from "./components/DailyBudget";
 import SavingsStatus from "./components/SavingsStatus";
 import Transactions from "./components/Transactions";
+import Accounts from "./components/Accounts";
 import styles from "./app.module.css";
 
 function App() {
@@ -49,7 +50,9 @@ function App() {
 
             <Card>
               <Card.Header>Minhas contas</Card.Header>
-              <Card.Body>R$ 200,00</Card.Body>
+              <Card.Body>
+                <Accounts />
+              </Card.Body>
             </Card>
           </section>
         </div>
