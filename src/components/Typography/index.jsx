@@ -10,11 +10,7 @@ const Typography = ({ variant, children }) => {
   const Component = TAGS[variant] || TAGS.body;
   const variantClass = styles[variant] || styles.p;
 
-  return (
-    <Component className={variantClass}>
-      {children}
-    </Component>
-  );
-}
+  return <Component className={variantClass}>{children}</Component>;
+};
 
 export default Typography;

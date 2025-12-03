@@ -1,4 +1,6 @@
-.h1, .h2, .p {
+.h1,
+.h2,
+.p {
   color: var(--neutral-text);
   margin: 0;
 }
@@ -7,9 +9,6 @@
   font-weight: 700;
   font-size: 31px;
   line-height: 120%;
-}
-
-.h2 {
 }
 
 .p {

@@ -6,9 +6,7 @@ const formatter = new Intl.NumberFormat("pt-BR", {
 });
 
 const DailyBudget = ({ value }) => {
-  return (
-    <p className={styles.dailybudget}>{formatter.format(value)}</p>
-  );
+  return <p className={styles.dailybudget}>{formatter.format(value)}</p>;
 };
 
 export default DailyBudget;
