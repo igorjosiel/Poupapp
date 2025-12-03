@@ -1,4 +1,4 @@
-import Button from "../Button";
+import ButtonCard from "../ButtonCard";
 import { IconCurrency } from "../icons";
 import TransactionItem from "../TransactionItem";
 import styles from "./transactions.module.css";
@@ -34,11 +34,9 @@ const Transactions = () => {
         })}
       </ul>
 
-      <div className={styles.actions}>
-        <Button>
-          <IconCurrency /> Adicionar transação
-        </Button>
-      </div>
+      <ButtonCard>
+        <IconCurrency /> Adicionar transação
+      </ButtonCard>
     </>
   );
 };
