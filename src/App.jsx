@@ -39,7 +39,7 @@ function App() {
               Progresso da meta financeira
             </Card.Header>
             <Card.Body>
-              <SavingsStatus percent={40} />
+              <SavingsStatus percent={25} />
             </Card.Body>
           </Card>
 
